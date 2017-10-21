@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> واتستايل </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="setFocusTo('otext')">
+<div class="container text-right">
+       <div class="jumbotron">
+        <form class="form">
+        <div class="form-group">
+            <input type="text" class="form-control" id="otext" value="" title="ادخل النص هنا:" placeholder="ادخل النص هنا:">
+        </div>
+        اختر التنسيق:
+<div class="btn-toolbar">
+    <div class="btn-group btn-group-justified" role="group">
+        <a class="btn btn-default" type="button" name="boldbtn" id="boldbtn" onclick="appendtext('bold');"><b> سميك </b></a>
+        <a class="btn btn-default" type="button" name="italicbtn" id="italicbtn" onclick="appendtext('italic');"><i> مائل </i></a>
+        <a class="btn btn-default" type="button" name="strikebtn" id="strikebtn" onclick="appendtext('strike');"><strike> مشطوب </strike></a>
+        <a class="btn btn-default" type="button" name="highlightedbtn" id="highlightedbtn" onclick="appendtext('highlighted');"> مميز.tt </a>
+    </div>
+</div>
+<br>
+    <div class="btn-group btn-group-justified" role="group">
+        <a class="btn btn-default" id="readmorebtn" onclick="appendreadmore()" > المزيد.. </a>
+        <!--</div>
+        <div class="btn-group btn-group-justified" role="group">-->
+        <a class="btn btn-default" id="newlinebtn" onclick="appendnewline()"> سطر جديد </a>
+        <a class="btn btn-default" id="copybtn" data-clipboard-target="#ftext"> نسخ </a>
+    </div>
+        
+    </form>
+      </div>
+    <label for="ftext"> النص بعد التنسيق: </label>
+    <div contenteditable="true" id="ftext">
+    </div><br><br><br>
+    <a class="btn btn-danger btn-block" id="resetbtn" onclick="resettext()"> مسح الكل </a>
+
+    <!--
+    <div class="form-group">
+      <label for="ftext"> النص بعد التنسيق: </label>
+      <textarea class="form-control" rows="5" id="ftext"></textarea>
+    </div>
+    -->
+      </div>
+    <hr>
+      <footer class="footer">
+        <center>تطبيقات عربية 2017 - &copy; arappz.net</center>
+      </footer>
+
+    </div> <!-- /container -->
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/functions.js"></script>
+
+  </body>
+</html>
