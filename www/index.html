@@ -27,15 +27,17 @@
         اختر التنسيق:
 <div class="btn-toolbar">
     <div class="btn-group btn-group-justified" role="group">
-        <a class="btn btn-default" type="button" name="boldbtn" id="boldbtn" onclick="appendtext('bold');"><b> سميك </b></a>
+      <a class="btn btn-default" type="button" name="boldbtn" id="boldbtn" onclick="appendtext('normal');"><b> عادي </b></a>  
+      <a class="btn btn-default" type="button" name="boldbtn" id="boldbtn" onclick="appendtext('bold');"><b> سميك </b></a>
         <a class="btn btn-default" type="button" name="italicbtn" id="italicbtn" onclick="appendtext('italic');"><i> مائل </i></a>
         <a class="btn btn-default" type="button" name="strikebtn" id="strikebtn" onclick="appendtext('strike');"><strike> مشطوب </strike></a>
-        <a class="btn btn-default" type="button" name="highlightedbtn" id="highlightedbtn" onclick="appendtext('highlighted');"> مميز.tt </a>
+        
     </div>
 </div>
 <br>
     <div class="btn-group btn-group-justified" role="group">
-        <a class="btn btn-default" id="readmorebtn" onclick="appendreadmore()" > المزيد.. </a>
+      <a class="btn btn-default" type="button" name="highlightedbtn" id="highlightedbtn" onclick="appendtext('highlighted');"> مميز.tt </a>  
+      <a class="btn btn-default" id="readmorebtn" onclick="appendreadmore()" > المزيد.. </a>
         <!--</div>
         <div class="btn-group btn-group-justified" role="group">-->
         <a class="btn btn-default" id="newlinebtn" onclick="appendnewline()"> سطر جديد </a>
